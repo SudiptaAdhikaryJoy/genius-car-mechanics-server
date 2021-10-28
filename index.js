@@ -55,9 +55,13 @@ run().catch(console.dir);
 
 
 app.get('/', (req, res) =>{
-    res.send('running genius server');
+    res.send('running genius server 5000');
 });
 
+app.get('/hello', (req, res)=>{
+    res.send('ami sudipta');
+})
+
 app.listen(port, ()=>{
-    console.log('running genius server on port', port);
+    console.log('running genius server on port 5000', port);
 })
